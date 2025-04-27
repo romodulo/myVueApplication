@@ -1,0 +1,2 @@
+First actions:
+npm create vue@latest .
