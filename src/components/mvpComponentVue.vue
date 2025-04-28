@@ -1,125 +1,49 @@
-@import './base.css';
-/* extracted-from--mvpCSS */
-:root {
-  --active-brightness: 0.85;
-  --border-radius: 5px;
-  --box-shadow: 2px 2px 10px;
-  --color-accent: #118bee15;
-  --color-bg: #fff;
-  --color-bg-secondary: #e9e9e9;
-  --color-link: #118bee;
-  --color-secondary: #920de9;
-  --color-secondary-accent: #920de90b;
-  --color-shadow: #f4f4f4;
-  --color-table: #118bee;
-  --color-text: #000;
-  --color-text-secondary: #999;
-  --color-scrollbar: #cacae8;
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  --hover-brightness: 1.2;
-  --justify-important: center;
-  --justify-normal: left;
-  --line-height: 1.5;
-  --width-card: 285px;
-  --width-card-medium: 460px;
-  --width-card-wide: 800px;
-  --width-content: 1080px;
-}
+<script setup>
 
-@media (prefers-color-scheme: dark) {
-  :root[color-mode="user"] {
-    --color-accent: #0097fc4f;
-    --color-bg: #333;
-    --color-bg-secondary: #555;
-    --color-link: #0097fc;
-    --color-secondary: #e20de9;
-    --color-secondary-accent: #e20de94f;
-    --color-shadow: #bbbbbb20;
-    --color-table: #0097fc;
-    --color-text: #f7f7f7;
-    --color-text-secondary: #aaa;
-  }
-}
+</script>
 
-html {
-  scroll-behavior: smooth;
-}
+<template>
+  <h2>mvpComponent Mounted</h2>
+  <section>
+    <aside>
+      <img src="https://plus.unsplash.com/premium_vector-1713913589831-611a54b0641c?q=80&w=1277&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="computers" height="150">
+      <h3>HTML and You're Done</h3>
+      <p>
+        MVP styles your root HTML elements, so you don't need to learn a new CSS framework or naming conventions.
+      </p>
+      <p>
+        <a href="#" target="">
+          <em>HTML Guide</em>
+        </a>
+      </p>
+    </aside>
+    <aside>
+      <img src="https://plus.unsplash.com/premium_vector-1731582098973-2d2c341b7791?q=80&w=2360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="computers" height="150">
+      <h3>Mobile-friendly UI</h3>
+      <p>
+      Mobile-friendly UIMVP is designed to look great on all browsers and devices out of the box for rapid prototyping.
+      </p>
+      <p>
+      It's like an amped up CSS reset that you can toss into any project to get decent styling.
+      </p>
+    </aside>
+    <aside>
+      <img src="https://images.unsplash.com/vector-1738934022191-816477188009?q=80&w=2360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="computers" height="150">
+      <h3>MIT License</h3>
+      <p>
+      Mobile-friendly UIMVP is designed to look great on all browsers and devices out of the box for rapid prototyping.
+      </p>
+      <p>
+      It's like an amped up CSS reset that you can toss into any project to get decent styling.
+      </p>
+    </aside>
+  </section>
+</template>
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-}
-/* end-of--extracted-from--mvpCSS */
-
-
-/* Layout */
-article aside {
-  background: var(--color-secondary-accent);
-  border-left: 4px solid var(--color-secondary);
-  padding: 0.01rem 0.8rem;
-}
-
-body {
-  background: var(--color-bg);
-  color: var(--color-text);
-  font-family: var(--font-family);
-  line-height: var(--line-height);
-  margin: 0;
-  overflow-x: hidden;
-  padding: 0;
-}
-
-footer,
-header,
-main {
-  margin: 0 auto;
-  max-width: var(--width-content);
-  padding: 3rem 1rem;
-}
-
-hr {
-  background-color: var(--color-bg-secondary);
-  border: none;
-  height: 1px;
-  margin: 4rem 0;
-  width: 100%;
-}
-
-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: var(--justify-important);
-}
-
-section img,
-article img {
-  max-width: 100%;
-}
-
-section pre {
-  overflow: auto;
-}
-
-section aside {
-  border: 1px solid var(--color-bg-secondary);
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow) var(--color-shadow);
-  margin: 1rem;
-  padding: 1.25rem;
-  width: var(--width-card);
-}
-
-section aside:hover {
-  box-shadow: var(--box-shadow) var(--color-bg-secondary);
-}
-
-[hidden] {
-  display: none;
-}
-/* End-of-Layout */
-
-
+<style scoped>
 /* Headers */
 article header,
 div header,
@@ -602,3 +526,4 @@ blockquote footer {
   background-color: var(--color-scrollbar);
   border-radius: 10px;
 }
+</style>
