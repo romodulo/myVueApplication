@@ -1,2 +1,4 @@
 First actions:
 npm create vue@latest .
+
+First commit of < 4-28>  <12:39>: empty out package -- myVueApplication
