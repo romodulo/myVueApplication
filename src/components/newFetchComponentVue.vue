@@ -7,6 +7,9 @@ const templateText = ref("const_templateText")
 const templateText2 = ref("")
 // end-Of--Variables
 
+// Variables 5 - 1
+const isactiveComponent = ref(false)
+// end-Of--Variables- 5- 1
 
 // Buttons-script
 async function clickHere() {
@@ -47,48 +50,66 @@ async function clickHere3() {
 }
 // end-Of--Buttons-script
 
+// Buttons-script-- 5 - 1
+function clickHere4() {
+  console.log("4th-button clicked")
+  if (isactiveComponent.value == false) {
+    isactiveComponent.value = true
+  } else {
+    isactiveComponent.value = false
+  }
+}
+// end-Of--Buttons-script-- 5- 1
+
+
 
 
 </script>
 
 <template>
-  <!-- Buttons -->
-  <p>
-      <a href="" target="" v-on:click.prevent = "clickHere">
-          <i>First Button</i>
-      </a>
-      <a href="" class="middle-button"></a>
-      <a href="" target="" v-on:click.prevent = "clickHere2">
-          <i>Second Button</i>
-      </a>
-      <a href="" class="middle-button"></a>
-      <a href="" target="" v-on:click.prevent = "clickHere3">
-          <i>Third Button</i>
-      </a>
-  </p>
-  <!-- end-Of--Buttons -->
-  <!--  -->
+    <!-- Buttons -->
+    <p>
+        <a href="" target="" v-on:click.prevent = "clickHere">
+            <i>First Button</i>
+        </a>
+        <a href="" class="middle-button"></a>
+        <a href="" target="" v-on:click.prevent = "clickHere2">
+            <i>Second Button</i>
+        </a>
+        <a href="" class="middle-button"></a>
+        <a href="" target="" v-on:click.prevent = "clickHere3">
+            <i>Third Button</i>
+        </a>
+        <!-- add: 5 - 1 -->
+        <a href="" class="middle-button"></a>
+        <a href="" target="" v-on:click.prevent = "clickHere4">
+            <i>Fourth Button</i>
+        </a>
+        <!-- end-of-Add: 5 - 1 -->
+    </p>
+    <!-- end-Of--Buttons -->
+    <!--  -->
 
-  <!--  -->
-  <!-- end-Of--Template-refs -->
-  <div>
-      {{ templateText }}
-  </div>
-  <div class="romel-show-none">
-      {{ templateText2 }}
-  </div>
-  <!-- end-Of--Template-refs -->
-  <!--  -->
+    <!--  -->
+    <!-- end-Of--Template-refs -->
+    <div>
+        {{ templateText }}
+    </div>
+    <div class="romel-show-none">
+        {{ templateText2 }}
+    </div>
+    <!-- end-Of--Template-refs -->
+    <!--  -->
 
-  <!--  -->
-  <!-- Title -->
-  <h2>New Fetch Component Mounted</h2>
-  <!-- end-Of--Title -->
-  <!--  -->
+    <!--  -->
+    <!-- Title -->
+    <h2>New Fetch Component Mounted</h2>
+    <!-- end-Of--Title -->
+    <!--  -->
 
-  <!-- New-Component -->
+    <!-- New-Component -->
     <!-- this: requires if clause -->
-    <section> 
+    <section v-bind:class="{'NewFetchComponentMounted-Section' : isactiveComponent}"> 
         <aside v-for="item in templateText2">
             <div class="romel">
                 <img v-bind:src="item['image']" alt="computers" height="150">
@@ -98,7 +119,7 @@ async function clickHere3() {
                             location,
                             contact-info
                             optional: social-media--links/ or pages
-                             -->
+                                -->
             <h3>{{ item ? item['name'] : "" }}</h3>
             <p>
                 The contact-number is:
@@ -107,8 +128,8 @@ async function clickHere3() {
         </aside>
     </section>
 
-  
-  <!-- end-Of--New-Component -->
+    
+    <!-- end-Of--New-Component -->
 
 </template>
 
@@ -123,5 +144,7 @@ async function clickHere3() {
 .romel-show-none {
     display: none;
 }
-
+.NewFetchComponentMounted-Section {
+    display: none;   
+}
 </style>
