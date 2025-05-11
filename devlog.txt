@@ -8,3 +8,5 @@ First commit of < 5- 1>  <12:19>: adjust tabbing(-formatting); add-display-none 
 Commit-message of < 5-10>  <23:57>:  adjust emptyComponentt.vue 
 
 First commit of < 5-11>  <22:44>:  added a non-animated-mesh-gradient to the background of one component
+
+Last commit of < 5-11>  <22:50>:  Todo: deploy website to a github pages Page; Last--commit--Message: no coding left for today;
