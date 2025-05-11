@@ -6,3 +6,5 @@ First commit of < 4-28>  <12:39>: empty out package -- myVueApplication
 First commit of < 5- 1>  <12:19>: adjust tabbing(-formatting); add-display-none to one component;
 
 Commit-message of < 5-10>  <23:57>:  adjust emptyComponentt.vue 
+
+First commit of < 5-11>  <22:44>:  added a non-animated-mesh-gradient to the background of one component
