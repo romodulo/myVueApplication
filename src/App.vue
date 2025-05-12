@@ -5,7 +5,7 @@ import picoCssSimpleComponent from './components/picoCssSimpleComponent.vue'
 import newFileComponent from './components/newFileComponent.vue'
 import backgroundComponent from './components/backgroundComponent.vue'
 import nonAnimatedMeshGradientBackground from './components/nonAnimatedMeshGradientBackground.vue'
-
+import anotherDivContainerComponent from './components/anotherDivContainerComponent.vue'
 
 </script>
 
@@ -17,6 +17,7 @@ import nonAnimatedMeshGradientBackground from './components/nonAnimatedMeshGradi
   <picoCssSimpleComponent />
   <backgroundComponent />
   <nonAnimatedMeshGradientBackground />
+  <anotherDivContainerComponent />
 </template>
 
 <style scoped>

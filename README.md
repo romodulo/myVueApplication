@@ -1,5 +1,11 @@
 # .
 
+## To do:
+
+Work on getting myVueApplication--"Project" deployed.
+
+## Instructions for Development && Production Build
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
