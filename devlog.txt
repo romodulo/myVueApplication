@@ -14,3 +14,5 @@ Last commit of < 5-11>  <22:50>:  Todo: deploy website to a github pages Page; L
 First commit of < 5-12>  <23:57>:  work on --three---circles---component  "nonAnimatedMeshGradientBackground.vue";
 
 First commit of < 5-13>  <23:52>:  deployed FirstBuild: "build01"  to username.github.io/myVueApplication from branch-name gh-pages-test--build01
+
+First commit of < 5-14>  <00:27>:  deployed build02 to new branch gh-pages-test-builds--only ::using deployment-branch
