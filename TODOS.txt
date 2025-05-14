@@ -1,1 +1,5 @@
 < 5-11>  deploy website to a github pages Page.
+< ANY-TIME--- 5-13>: should I delete the entire repo, and begin a Fresh-Project, 
+    but continue making commits from the most recent commit? 
+    - Should I try to create a new project with a differeny UI/ UX design system, 
+    -- like Nuxt UI/  or Nuxt UI Pro (paid-service)?
