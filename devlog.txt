@@ -20,3 +20,5 @@ First commit of < 5-14>  <00:27>:  deployed build02 to new branch gh-pages-test-
 no-coding left for today
 
 First commit of  5-16 23:14  add Todo
+
+Checkpoint commit of  5-16 23:16  no-coding left for today. 
